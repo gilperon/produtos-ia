@@ -37,6 +37,15 @@ Os seguintes elementos foram removidos dos HTMLs:
 - ❌ **Tags `<script>`** - Scripts originais do framework
 - ❌ **Tags `<style>`** - Estilos inline
 
+# No .css gerado adicionar essas duas regras no final para melhorar o cover principal (todox)
+.csx-min-h-screen > div:first-child{
+    clip-path: polygon(100% 0, 100% 88%, 50% 100%, 50% 100%, 0 88%, 0 0);
+    padding-bottom:100px;
+}
+svg.csx-w-full.csx-block {
+    display: none;
+}
+
 ### 3. Download de Imagens
 
 Todas as imagens foram baixadas da URL original e salvas na pasta `assets/`:

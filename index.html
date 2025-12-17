@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH3A Produtos - Navegação</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
+            min-height: 100vh;
+            color: #fff;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #ef5929, #ff8c5a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            color: rgba(255,255,255,0.7);
+            font-size: 1.1rem;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 50px;
+        }
+        
+        .product-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 30px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .product-card:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: #ef5929;
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(239, 89, 41, 0.2);
+        }
+        
+        .product-card img {
+            height: 50px;
+            margin-bottom: 20px;
+            object-fit: contain;
+        }
+        
+        .product-card h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .product-card p {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .product-card .arrow {
+            margin-top: 20px;
+            color: #ef5929;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover .arrow {
+            transform: translateX(5px);
+        }
+        
+        .info-section {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        
+        .info-section h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #ef5929;
+        }
+        
+        .info-section ul {
+            list-style: none;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .info-section li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .info-section li:last-child {
+            border-bottom: none;
+        }
+        
+        .info-section code {
+            background: rgba(239, 89, 41, 0.2);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #ff8c5a;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: rgba(255,255,255,0.4);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PH3A Produtos</h1>
+            <p class="subtitle">Páginas refatoradas com prefixo CSX para integração com Bootstrap 5</p>
+        </header>
+        
+        <div class="products-grid">
+            <a href="databusca-csx.html" class="product-card">
+                <img src="assets/logo-databusca-new-X428bv0z.png" alt="DataBusca">
+                <h2>DataBusca</h2>
+                <p>Solução de busca e enriquecimento de dados sobre pessoas e empresas no Brasil.</p>
+                <span class="arrow">→</span>
+            </a>
+            
+            <a href="datacubobi-csx.html" class="product-card">
+                <img src="assets/logo-datacubobi-new-BEH6FgGc.png" alt="DataCubo BI">
+                <h2>DataCubo BI</h2>
+                <p>Business Intelligence com dados de alta qualidade para análises avançadas.</p>
+                <span class="arrow">→</span>
+            </a>
+            
+            <a href="datadossie-csx.html" class="product-card">
+                <img src="assets/logo-datadossie-new-B0ZBLjJR.png" alt="DataDossiê">
+                <h2>DataDossiê</h2>
+                <p>Dossiês completos com informações detalhadas de pessoas e empresas.</p>
+                <span class="arrow">→</span>
+            </a>
+            
+            <a href="datafraud-csx.html" class="product-card">
+                <img src="assets/logo-datafraud-new-BSWYtVWO.png" alt="DataFraud">
+                <h2>DataFraud</h2>
+                <p>Prevenção à fraude com análise de risco e validação de identidade.</p>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+        
+        <div class="info-section">
+            <h3>📁 Arquivos do Projeto</h3>
+            <ul>
+                <li><code>index-csx.css</code> - CSS com classes prefixadas</li>
+                <li><code>scroll-animations.js</code> - Animações de scroll</li>
+                <li><code>refactor-produtos.js</code> - Script de refatoração (Node.js)</li>
+                <li><code>assets/</code> - Imagens dos produtos</li>
+                <li><code>readme-csx.md</code> - Documentação do processo</li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>© 2024 PH3A - Páginas refatoradas para integração Bootstrap 5</p>
+        </footer>
+    </div>
+</body>
+</html>
+
